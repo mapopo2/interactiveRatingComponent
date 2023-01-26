@@ -1,0 +1,145 @@
+body {
+    background-color: #141E27;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.7rem;
+    width: auto;
+}
+
+p {
+   color: #787A91; 
+   font-size: 0.9rem;
+}
+
+#interactiveRC {
+    height: 40rem;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.star {
+    text-align: center;
+    background-color: #282A3A;
+    border-style: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+object {
+    margin-top: 13px;
+}
+
+.container {
+    width: 30%;
+    height: 55%;
+    padding: 30px 25px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 9%;
+    background-color: #1B2430;
+    border-radius: 30px;
+}
+
+.container2 {
+    width: 30%;
+    height: 55%;
+    padding: 30px 25px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 9%;
+    background-color: #1B2430;
+    border-radius: 30px;
+}
+
+.feedback {
+    text-align: left;
+    margin: 25px 5px 20px;
+    width: 95%;
+}
+
+.rating {
+    border-radius: 50%;
+    color: #6B728E;
+    background-color: #282A3A;
+    border-style: none;
+    margin-right: 12px;
+    margin-left: 5px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+.rating:hover {
+    background-color: #FF8B13;
+    color: white;
+    cursor: pointer;
+}
+
+.rating:active {
+    color: white;
+    background-color: #787A91;
+}
+
+.numbers {
+    margin: 35px 0 0;
+}
+
+.submit {
+    border-radius: 30px;
+    padding: 15px 0;
+    width: 95%;
+    border-style: none;
+    background-color: #FF8B13;
+    color: white;
+    font-size: 1rem;
+    margin-top: 30px;
+
+}
+
+.submit:hover {
+    color: #FF8B13;
+    background-color: white;
+    cursor: pointer;
+}
+
+.clicked {
+    color: #FF8B13;
+    background-color:#282A3A;
+    border-radius: 15px;
+    padding: 6px 0;
+}
+
+.clickedC {
+    width: 50%;
+    height: 10%;
+    display: inline-block;
+    text-align: center;
+    margin: 25px 0 0;
+}
+
+.invisible {
+    display: none;
+}
+
+.attribution {
+    color: white;
+    font-weight: lighter;
+    margin-top: 2%;
+  
+} 
+
+.credits {
+    color: white;
+    font-weight: bold;
+}

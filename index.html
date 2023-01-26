@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!--favicon-->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <!--stylesheets-->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <div id = "interactiveRC">
+
+    <div class = "container" id = "rate">
+      <div class = "star"> 
+        <object data="images/icon-star.svg"></object>
+      </div>
+      
+    
+      <div class= "feedback">
+
+        <h1>How did we do?</h1> 
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering! </p>  
+      </div>
+
+      <div class = "numbers">
+
+        <button type = "button" class = "rating one">1</button>
+        <button type = "button" class = "rating two">2</button>
+        <button type = "button" class = "rating three">3</button>
+        <button type = "button" class = "rating four">4</button>
+        <button type = "button" class = "rating five">5</button>
+
+      </div>
+        
+      <div>
+        <button type = "button" class = "submit" >SUBMIT</button>
+      </div>
+      
+
+    </div>
+      
+    <!-- Rating state end -->
+
+    <!-- Thank you state start-->
+
+    <div class = "container2" id="result">
+      <div class = "thanks"> 
+        <object data="images/illustration-thank-you.svg" class="thankYou"></object>
+      </div>
+
+      <div class = "clickedC">
+        <p class = "clicked">
+          You selected  <!--Add rating here-->  out of 5
+        </p>
+      </div>
+      
+      <div>
+        <h1>Thank you!</h1>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
+      </div>
+      
+    </div>
+  </div>
+  <!-- Thank you state end -->
+
+  
+  <div class="attribution">
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class = "credits">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/mapopo2"  class = "credits">mapopo2</a>.
+    </p>
+  </div>
+
+  <script src="index.js" charset="utf-8"></script>
+
+</body>
+</html>
