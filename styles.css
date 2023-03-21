@@ -86,10 +86,10 @@ object {
     cursor: pointer;
 }
 
-.rating:active {
+.rating-click{
     color: white;
     background-color: #787A91;
-}
+} 
 
 .numbers {
     margin: 35px 0 0;
@@ -131,6 +131,7 @@ object {
 .invisible {
     display: none;
 }
+
 
 .attribution {
     color: white;
