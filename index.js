@@ -6,7 +6,7 @@ $(" .submit").on("click", function(){
   $("body #result").removeClass("invisible"); 
 });
 
-  $(".rating").on("click", function(){
+  $(".one").on("click", function(){
     $(".one").addClass("rating-click");
     $(".two").removeClass("rating-click");
     $(".three").removeClass("rating-click");
