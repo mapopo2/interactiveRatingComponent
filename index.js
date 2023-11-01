@@ -1,4 +1,6 @@
 
+console.log("hello");
+
 $("body #result").addClass("invisible"); 
 
 $(" .submit").on("click", function(){
@@ -6,47 +8,15 @@ $(" .submit").on("click", function(){
   $("body #result").removeClass("invisible"); 
 });
 
-  $(".one").on("click", function(){
-    $(".one").addClass("rating-click");
-    $(".two").removeClass("rating-click");
-    $(".three").removeClass("rating-click");
-    $(".four").removeClass("rating-click");
-    $(".five").removeClass("rating-click");
-    $(".clicked").text("You selected 1 out of 5");
-  });
-  
-    $(".two").on("click", function(){
-      $(".two").addClass("rating-click");
-      $(".one").removeClass("rating-click");
-      $(".three").removeClass("rating-click");
-      $(".four").removeClass("rating-click");
-      $(".five").removeClass("rating-click");
-      $(".clicked").text("You selected 2 out of 5");
-    });
+const ratings = document.getElementById("r-result");
+// const ratings = $("body #r-result");
+const rates = $(".rating"); 
+//convert to array - forEach not working
+const ratesArr = Array.from(rates);
 
-    $(".three").on("click", function(){
-      $(".three").addClass("rating-click");
-      $(".one").removeClass("rating-click");
-      $(".two").removeClass("rating-click");
-      $(".four").removeClass("rating-click");
-      $(".five").removeClass("rating-click");
-      $(".clicked").text("You selected 3 out of 5");
-    });
-
-    $(".four").on("click", function(){
-      $(".four").addClass("rating-click");
-      $(".one").removeClass("rating-click");
-      $(".three").removeClass("rating-click");
-      $(".two").removeClass("rating-click");
-      $(".five").removeClass("rating-click");
-      $(".clicked").text("You selected 4 out of 5");
-    });
-
-    $(".five").on("click", function(){
-      $(".five").addClass("rating-click");
-      $(".one").removeClass("rating-click");
-      $(".three").removeClass("rating-click");
-      $(".four").removeClass("rating-click");
-      $(".two").removeClass("rating-click");
-      $(".clicked").text("You selected 5 out of 5");
-    });
+ratesArr.forEach ((rate) => {
+  rate.addEventListener("click", function () {
+  ratings.innerHTML = rate.innerHTML;
+    console.log(rate.innerHTML);
+});
+});
